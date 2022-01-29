@@ -13,19 +13,19 @@ export default function GuestBook() {
           </div>
           <div className="row">
             <div className="card-wrapper">
-              <div className="card-guest-book">
+              <div className="card-guest-book mb-4">
                 <label className="fw-bold fs-6 mb-1">Udin Bambang - Naruto</label>
                 <p className="">Temanku ini sudah punya gandengan, aku masih betah dalam kejombloan. Selamat menikah, 🥰😘🥰😘</p>
               </div>
-              <div className="card-guest-book">
+              <div className="card-guest-book mb-4">
                 <label className="fw-bold fs-6 mb-1">Udin Bambang - Naruto</label>
                 <p className="">Temanku ini sudah punya gandengan, aku masih betah dalam kejombloan. Selamat menikah, 🥰😘🥰😘</p>
               </div>
-              <div className="card-guest-book">
+              <div className="card-guest-book mb-4">
                 <label className="fw-bold fs-6 mb-1">Udin Bambang - Naruto</label>
                 <p className="">Temanku ini sudah punya gandengan, aku masih betah dalam kejombloan. Selamat menikah, 🥰😘🥰😘</p>
               </div>
-              <div className="card-guest-book">
+              <div className="card-guest-book mb-4">
                 <label className="fw-bold fs-6 mb-1">Udin Bambang - Naruto</label>
                 <p className="">Temanku ini sudah punya gandengan, aku masih betah dalam kejombloan. Selamat menikah, 🥰😘🥰😘</p>
               </div>
