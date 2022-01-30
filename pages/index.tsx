@@ -23,6 +23,7 @@ const Home = () => {
         <meta name="description" content="Gian and Mela Wedding" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* update */}
       {/* <Gift></Gift> */}
       <Wish></Wish>
       {comment && <GuestBook comment={comment}></GuestBook>}
