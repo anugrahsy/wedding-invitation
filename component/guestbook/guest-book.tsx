@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+// import { AppProps } from 'next/app';
+import Api from '../../pages/api/guest-book';
 
-export default function GuestBook() {
+const GuestBook = ({comment}: any) => {
+  console.log('isi comment guest book', comment);
   return (
     <>
-      <div className="container-sm">
+    <div className="container-sm">
         <section className="p-4 m-1">
           <div className="row">
             <div className="tittle mb-4">
@@ -13,22 +16,12 @@ export default function GuestBook() {
           </div>
           <div className="row">
             <div className="card-wrapper">
-              <div className="card-guest-book mb-4">
-                <label className="fw-bold fs-6 mb-1">Udin Bambang - Naruto</label>
-                <p className="">Temanku ini sudah punya gandengan, aku masih betah dalam kejombloan. Selamat menikah, 🥰😘🥰😘</p>
-              </div>
-              <div className="card-guest-book mb-4">
-                <label className="fw-bold fs-6 mb-1">Udin Bambang - Naruto</label>
-                <p className="">Temanku ini sudah punya gandengan, aku masih betah dalam kejombloan. Selamat menikah, 🥰😘🥰😘</p>
-              </div>
-              <div className="card-guest-book mb-4">
-                <label className="fw-bold fs-6 mb-1">Udin Bambang - Naruto</label>
-                <p className="">Temanku ini sudah punya gandengan, aku masih betah dalam kejombloan. Selamat menikah, 🥰😘🥰😘</p>
-              </div>
-              <div className="card-guest-book mb-4">
-                <label className="fw-bold fs-6 mb-1">Udin Bambang - Naruto</label>
-                <p className="">Temanku ini sudah punya gandengan, aku masih betah dalam kejombloan. Selamat menikah, 🥰😘🥰😘</p>
-              </div>
+              {comment.map((comment: any) => (
+                <div className="card-guest-book mb-4" key={comment.id}>
+                  <label className="fw-bold fs-6 mb-1">{`${comment.name} - ${comment.relationship}`}</label>
+                  <p className="">{comment.message}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="row mt-4">
@@ -40,3 +33,6 @@ export default function GuestBook() {
     </>
   )
 }
+
+export default GuestBook
+
