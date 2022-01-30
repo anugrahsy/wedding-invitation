@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 // import { AppProps } from 'next/app';
 import Api from '../../pages/api/guest-book';
+// import  wishJSON from '../../database/guest-book.json'
 
 const GuestBook = ({comment}: any) => {
   console.log('isi comment guest book', comment);
+  // console.log('wish json', wishJSON);
   return (
     <>
     <div className="container-sm">
