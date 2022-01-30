@@ -24,7 +24,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Gift></Gift> */}
-      <Wish></Wish>
+      {/* <Wish></Wish> */}
       {comment && <GuestBook comment={comment}></GuestBook>}
     </>
   )
